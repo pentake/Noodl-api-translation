@@ -1,2 +1,4 @@
 # Noodl-api-translation
-英語のテキストを入力すると日本語に翻訳してくれるNoodlのプロジェクトデータです。IBM Watsonのlanguage translatorを利用しています。
+英語のテキストを入力すると日本語に翻訳してくれるNoodlのプロジェクトファイルです。IBM Watsonのlanguage translatorを利用しています。
+
+language translatorの利用方法は、Qiitaの記事を参照ください。
