@@ -1,0 +1,1040 @@
+{
+    "name": "色々",
+    "components": [
+        {
+            "name": "/Translation",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "1504f58a-ea39-eb62-d7c0-397e218c34de",
+                        "fromProperty": "translated",
+                        "toId": "8782a34f-8346-b036-4c43-e4e81a3989c8",
+                        "toProperty": "translated"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "1397ce5e-7372-4054-6f95-d3211df3a033",
+                        "type": "Group",
+                        "version": 2,
+                        "x": 78,
+                        "y": 180,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "bd2f447e-d5b7-9865-f4e1-c41c4217b5cb",
+                                "type": "Rectangle",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "color": "#EEEEEE"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "32619a98-3308-db62-9f30-92e4b6df0c58",
+                                "type": "Stack Layout",
+                                "x": 20,
+                                "y": 92,
+                                "parameters": {
+                                    "padding": 80,
+                                    "itemSpacing": 120,
+                                    "sizeMode": "childHeight",
+                                    "alignY": "center",
+                                    "y": -50
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "d325c926-3df7-3d1e-2860-605c7a9b2617",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "text": "ぺんたけ翻訳",
+                                            "alignX": "center",
+                                            "fontSize": 80,
+                                            "color": "#888888"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "1504f58a-ea39-eb62-d7c0-397e218c34de",
+                                        "type": "/Text box (translate)",
+                                        "x": 20,
+                                        "y": 107,
+                                        "parameters": {
+                                            "Title": "English"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "8782a34f-8346-b036-4c43-e4e81a3989c8",
+                                        "type": "/Text box (translated)",
+                                        "x": 20,
+                                        "y": 189,
+                                        "parameters": {
+                                            "Title": "日本語"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/Text box (translated)",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "3835eaa8-6e04-26c8-670c-a8a890b9bc67",
+                        "fromProperty": "Title",
+                        "toId": "da6e3d3a-769e-596c-2e2b-0c52f8a6756d",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "c8d32deb-56e8-1b8f-7ca2-737228d6f334",
+                        "fromProperty": "touch.tap",
+                        "toId": "32d4530c-1725-51aa-bc54-719865d50778",
+                        "toProperty": "Tap"
+                    },
+                    {
+                        "fromId": "3835eaa8-6e04-26c8-670c-a8a890b9bc67",
+                        "fromProperty": "translated",
+                        "toId": "25358423-84f1-4bc7-e06e-ed005d3dea88",
+                        "toProperty": "text"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "3835eaa8-6e04-26c8-670c-a8a890b9bc67",
+                        "type": "Component Inputs",
+                        "x": 516.8734863033338,
+                        "y": 532.6258594623225,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Title",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            },
+                            {
+                                "name": "Tap",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 2
+                            },
+                            {
+                                "name": "translated",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 3
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "c8d32deb-56e8-1b8f-7ca2-737228d6f334",
+                        "type": "Group",
+                        "version": 2,
+                        "x": 236.52428180758164,
+                        "y": 283.9357163064233,
+                        "parameters": {
+                            "alignX": "center",
+                            "sizeMode": "childHeight"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "9f653881-50d5-5526-f654-fd135053bdea",
+                                "type": "Rectangle",
+                                "x": 20,
+                                "y": 143,
+                                "parameters": {
+                                    "color": "#C2A1FF",
+                                    "cornerRadius": 30
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "d233cf6f-60ac-6a9b-1587-6e30e152ab76",
+                                "type": "Stack Layout",
+                                "x": 256.52428180758164,
+                                "y": 508.9357163064233,
+                                "parameters": {
+                                    "padding": 100,
+                                    "itemSpacing": 30,
+                                    "sizeMode": "childHeight"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "da6e3d3a-769e-596c-2e2b-0c52f8a6756d",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "label": "Title",
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "color": "#FFFFFF",
+                                            "fontSize": 60,
+                                            "alignX": "left",
+                                            "alignY": "top",
+                                            "text": "Title"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "25358423-84f1-4bc7-e06e-ed005d3dea88",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 143,
+                                        "parameters": {
+                                            "fontSize": 60,
+                                            "color": "#FFFFFF",
+                                            "text": "結果"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "32d4530c-1725-51aa-bc54-719865d50778",
+                        "type": "Component Outputs",
+                        "x": 3.2886411476879402,
+                        "y": 302.1675277896379,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Tap",
+                                "plug": "input",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/Text box (translate)",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "a18e40ee-0da5-3651-4be4-cf349868704b",
+                        "fromProperty": "shadow",
+                        "toId": "bd96e983-cf55-085f-073b-58d144d7ca71",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "8e0b4eb8-0467-bc94-df32-f6d4352a5153",
+                        "fromProperty": "Title",
+                        "toId": "402e3699-cc11-bc0e-4553-932b89f281c1",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "979e1a7c-4f52-3f39-3efb-76d5d74471f9",
+                        "fromProperty": "touch.tap",
+                        "toId": "01b24131-aea5-6bef-ee75-9655cd29cf22",
+                        "toProperty": "Tap"
+                    },
+                    {
+                        "fromId": "96d5c6c0-eab2-90e2-a7b4-a4693997c4f0",
+                        "fromProperty": "translated",
+                        "toId": "01b24131-aea5-6bef-ee75-9655cd29cf22",
+                        "toProperty": "translated"
+                    },
+                    {
+                        "fromId": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                        "fromProperty": "text",
+                        "toId": "96d5c6c0-eab2-90e2-a7b4-a4693997c4f0",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                        "fromProperty": "confirmed",
+                        "toId": "96d5c6c0-eab2-90e2-a7b4-a4693997c4f0",
+                        "toProperty": "fetch"
+                    },
+                    {
+                        "fromId": "995bbc37-7f8d-7fb2-9100-18299f54814d",
+                        "fromProperty": "result",
+                        "toId": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                        "toProperty": "color"
+                    },
+                    {
+                        "fromId": "2bf4287d-85e0-4ea1-cbaa-137875054dad",
+                        "fromProperty": "currentCount",
+                        "toId": "658bc6dd-97ff-7094-45b2-62ba592b1346",
+                        "toProperty": "count"
+                    },
+                    {
+                        "fromId": "658bc6dd-97ff-7094-45b2-62ba592b1346",
+                        "fromProperty": "result",
+                        "toId": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                        "toProperty": "clear"
+                    },
+                    {
+                        "fromId": "3d92d069-2ffe-464a-c1f3-3b72e0aa558d",
+                        "fromProperty": "touch.tap",
+                        "toId": "2bf4287d-85e0-4ea1-cbaa-137875054dad",
+                        "toProperty": "increase"
+                    },
+                    {
+                        "fromId": "3d92d069-2ffe-464a-c1f3-3b72e0aa558d",
+                        "fromProperty": "touch.tap",
+                        "toId": "0d78f79e-5276-490f-a067-8153d3e7a3ce",
+                        "toProperty": "start"
+                    },
+                    {
+                        "fromId": "0d78f79e-5276-490f-a067-8153d3e7a3ce",
+                        "fromProperty": "timerFinished",
+                        "toId": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                        "toProperty": "focus"
+                    },
+                    {
+                        "fromId": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                        "fromProperty": "blurred",
+                        "toId": "a18e40ee-0da5-3651-4be4-cf349868704b",
+                        "toProperty": "to-unfocused"
+                    },
+                    {
+                        "fromId": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                        "fromProperty": "focused",
+                        "toId": "a18e40ee-0da5-3651-4be4-cf349868704b",
+                        "toProperty": "to-focused"
+                    },
+                    {
+                        "fromId": "658bc6dd-97ff-7094-45b2-62ba592b1346",
+                        "fromProperty": "result",
+                        "toId": "b26170b1-45bd-b78d-823c-2959a72c259b",
+                        "toProperty": "to-off"
+                    },
+                    {
+                        "fromId": "b26170b1-45bd-b78d-823c-2959a72c259b",
+                        "fromProperty": "color",
+                        "toId": "995bbc37-7f8d-7fb2-9100-18299f54814d",
+                        "toProperty": "blendValue"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "a18e40ee-0da5-3651-4be4-cf349868704b",
+                        "type": "States",
+                        "x": 1116.044730000374,
+                        "y": 523.9245594191784,
+                        "parameters": {
+                            "states": "unfocused,focused",
+                            "values": "shadow",
+                            "startState": "unfocused",
+                            "duration-unfocused": 500,
+                            "value-unfocused-shadow": 0.02,
+                            "value-unfocused-color": 1,
+                            "value-focused-shadow": 0.08,
+                            "value-focused-color": 1,
+                            "duration-initial": 500,
+                            "value-initial-shadow": 0.02,
+                            "value-initial-color": 0
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "shadow",
+                                "index": 6
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "unfocused Values",
+                                "name": "value-unfocused-shadow",
+                                "displayName": "shadow",
+                                "editorName": "unfocused|shadow",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "unfocused Transition",
+                                "name": "transition-unfocused",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "unfocused Transition",
+                                "name": "duration-unfocused",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To unfocused",
+                                "name": "to-unfocused",
+                                "group": "Go to state",
+                                "index": 10
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At unfocused",
+                                "name": "at-unfocused",
+                                "group": "Current state",
+                                "index": 11
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached unfocused",
+                                "name": "reached-unfocused",
+                                "group": "Current state",
+                                "index": 12
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "focused Values",
+                                "name": "value-focused-shadow",
+                                "displayName": "shadow",
+                                "editorName": "focused|shadow",
+                                "index": 13
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "focused Transition",
+                                "name": "transition-focused",
+                                "index": 14
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "focused Transition",
+                                "name": "duration-focused",
+                                "index": 15
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To focused",
+                                "name": "to-focused",
+                                "group": "Go to state",
+                                "index": 16
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At focused",
+                                "name": "at-focused",
+                                "group": "Current state",
+                                "index": 17
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached focused",
+                                "name": "reached-focused",
+                                "group": "Current state",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "unfocused",
+                                        "focused"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "Start at",
+                                "name": "startState",
+                                "default": "unfocused",
+                                "index": 19
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "8e0b4eb8-0467-bc94-df32-f6d4352a5153",
+                        "type": "Component Inputs",
+                        "x": 1046.8414901356955,
+                        "y": 329,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Title",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "979e1a7c-4f52-3f39-3efb-76d5d74471f9",
+                        "type": "Group",
+                        "version": 2,
+                        "x": 735.1143449884155,
+                        "y": 371.4971460902773,
+                        "parameters": {
+                            "alignX": "center",
+                            "sizeMode": "childHeight"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "bd96e983-cf55-085f-073b-58d144d7ca71",
+                                "type": "Rectangle",
+                                "label": "Shadow",
+                                "x": 256.52428180758164,
+                                "y": 365.9357163064233,
+                                "parameters": {
+                                    "color": "#000000",
+                                    "blur": 50,
+                                    "blendMode": "alpha",
+                                    "cornerRadius": 30,
+                                    "opacity": 0.05
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "ea871222-9756-f11c-15ba-7ff865ad089e",
+                                "type": "Rectangle",
+                                "x": 256.52428180758164,
+                                "y": 462.9357163064233,
+                                "parameters": {
+                                    "color": "#FFFFFF",
+                                    "cornerRadius": 30
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "d5c55bd2-ab6c-0fb4-6d55-723033d89927",
+                                "type": "Stack Layout",
+                                "x": 256.52428180758164,
+                                "y": 508.9357163064233,
+                                "parameters": {
+                                    "padding": 100,
+                                    "itemSpacing": 30,
+                                    "sizeMode": "childHeight"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "402e3699-cc11-bc0e-4553-932b89f281c1",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "label": "Title",
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "color": "#AAAAAA",
+                                            "fontSize": 60,
+                                            "alignX": "left",
+                                            "alignY": "top",
+                                            "text": "Title"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "8c44ea58-4a73-44e1-9e2b-cc64eeca650d",
+                                        "type": "Text Input",
+                                        "x": 20,
+                                        "y": 143,
+                                        "parameters": {
+                                            "color": "#888888",
+                                            "fontSize": 60,
+                                            "type": "text",
+                                            "width": {
+                                                "value": 100,
+                                                "unit": "%"
+                                            },
+                                            "height": {
+                                                "value": 100,
+                                                "unit": "px"
+                                            },
+                                            "text": "Enter the text"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "3d92d069-2ffe-464a-c1f3-3b72e0aa558d",
+                                "type": "Group",
+                                "version": 2,
+                                "x": 788.2798594462502,
+                                "y": 423.6421648876325,
+                                "parameters": {},
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "01b24131-aea5-6bef-ee75-9655cd29cf22",
+                        "type": "Component Outputs",
+                        "x": 409,
+                        "y": 408.55572196440846,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Tap",
+                                "plug": "input",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            },
+                            {
+                                "name": "translated",
+                                "plug": "input",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 2
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "96d5c6c0-eab2-90e2-a7b4-a4693997c4f0",
+                        "type": "REST",
+                        "x": 407.8846909712973,
+                        "y": 667.1623149612878,
+                        "parameters": {
+                            "code": "define({\n\t// The input ports of the REST node, name of input and type\n\tinputs:{\n\t    //ExampleInput:'number',\n\t    text: \"string\"\n\t},\n\t\n\t// The output ports of the REST node, name of output and type\n\toutputs:{\n\t    //ExampleOutput:'string',\n\t    translated: \"string\"\n\t},\n\t\n\t//Add custom code to setup the request object before the request\n\t//is made.\n\t//\n\t//*request.resource     contains the resource path of the request.\n\t//*request.method       contains the method, GET, POST, PUT or DELETE.\n\t//*request.headers      is a map where you can add additional headers.\n\t//*request.parameters   is a map the parameters that will be appended\n\t//                      to the url.\n\t//*request.content      contains the content of the request as a javascript\n\t//                      object.\n\t//\n\t// The inputs and outputs maps can also be accessed via *this.inputs and\n\t// *this.outputs.\n\trequest:function(inputs,request) {\n\t    request.content = {\n\t        \"text\": inputs.text\n\t    };\n\t},\n\t\n\t// Add custom code to convert the response content to outputs\n\t//\n\t//*response.status    The status code of the response\n\t//*response.content   The content of the response as a javascript\n\t//                    object.\n\t//*response.request   The request object that resulted in the response.\n\t//\n\t// The inputs and outputs maps can also be accessed via *this.inputs and\n\t// *this.outputs.\n\tresponse:function(outputs,response) {\n\t    outputs.translated = response.content;\n\t    console.log(outputs.translated);\n\t}\n})\n",
+                            "backendEndpoint": "https://node-red-pentake.mybluemix.net",
+                            "resource": "/translate",
+                            "method": "POST"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "text",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 13
+                            },
+                            {
+                                "name": "translated",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 14
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "995bbc37-7f8d-7fb2-9100-18299f54814d",
+                        "type": "Color Blend",
+                        "x": 1113.1628207179374,
+                        "y": 694.5232075285855,
+                        "parameters": {
+                            "color 1": "#888888",
+                            "color 0": "#CCCCCC"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "2bf4287d-85e0-4ea1-cbaa-137875054dad",
+                        "type": "Counter",
+                        "x": 1112.3832771347193,
+                        "y": 830.4400922964955,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "658bc6dd-97ff-7094-45b2-62ba592b1346",
+                        "type": "Expression",
+                        "x": 1115.7803870036364,
+                        "y": 955.5134730695756,
+                        "parameters": {
+                            "expression": "count == 1"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "count",
+                                "type": "number",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "0d78f79e-5276-490f-a067-8153d3e7a3ce",
+                        "type": "Timer",
+                        "x": 528.8828261443322,
+                        "y": 814.8184397065677,
+                        "parameters": {
+                            "duration": 10
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "a30ce236-2692-fdc3-c2f8-b07c5ba0d8b5",
+                        "type": "Expression",
+                        "x": 1117.2653144926544,
+                        "y": 1091.394003932041,
+                        "parameters": {
+                            "expression": "count == 0"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "count",
+                                "type": "number",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "b26170b1-45bd-b78d-823c-2959a72c259b",
+                        "type": "States",
+                        "label": "initial text ",
+                        "x": 1352.2653144926544,
+                        "y": 739.394003932041,
+                        "parameters": {
+                            "states": "on,off",
+                            "values": "color",
+                            "value-on-color": 0,
+                            "value-off-color": 1
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "color",
+                                "index": 6
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "on Values",
+                                "name": "value-on-color",
+                                "displayName": "color",
+                                "editorName": "on|color",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "on Transition",
+                                "name": "transition-on",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "on Transition",
+                                "name": "duration-on",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To on",
+                                "name": "to-on",
+                                "group": "Go to state",
+                                "index": 10
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At on",
+                                "name": "at-on",
+                                "group": "Current state",
+                                "index": 11
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached on",
+                                "name": "reached-on",
+                                "group": "Current state",
+                                "index": 12
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "off Values",
+                                "name": "value-off-color",
+                                "displayName": "color",
+                                "editorName": "off|color",
+                                "index": 13
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "off Transition",
+                                "name": "transition-off",
+                                "index": 14
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "off Transition",
+                                "name": "duration-off",
+                                "index": 15
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To off",
+                                "name": "to-off",
+                                "group": "Go to state",
+                                "index": 16
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At off",
+                                "name": "at-off",
+                                "group": "Current state",
+                                "index": 17
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached off",
+                                "name": "reached-off",
+                                "group": "Current state",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "on",
+                                        "off"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "Start at",
+                                "name": "startState",
+                                "default": "on",
+                                "index": 19
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "devices": "Default Device",
+        "Default Device.fillMode": "aspectFit",
+        "Default Device.canvasWidth": 1080,
+        "Default Device.canvasHeight": 1920,
+        "mqttUseExternalBroker": false,
+        "mqttBrokerUrl": "mqtt://noodl-test-pentake:817d3f6cc8abe43f@broker.shiftr.io"
+    },
+    "rootNodeId": "1397ce5e-7372-4054-6f95-d3211df3a033",
+    "version": "1"
+}
