@@ -725,7 +725,7 @@
                         "y": 667.1623149612878,
                         "parameters": {
                             "code": "define({\n\t// The input ports of the REST node, name of input and type\n\tinputs:{\n\t    //ExampleInput:'number',\n\t    text: \"string\"\n\t},\n\t\n\t// The output ports of the REST node, name of output and type\n\toutputs:{\n\t    //ExampleOutput:'string',\n\t    translated: \"string\"\n\t},\n\t\n\t//Add custom code to setup the request object before the request\n\t//is made.\n\t//\n\t//*request.resource     contains the resource path of the request.\n\t//*request.method       contains the method, GET, POST, PUT or DELETE.\n\t//*request.headers      is a map where you can add additional headers.\n\t//*request.parameters   is a map the parameters that will be appended\n\t//                      to the url.\n\t//*request.content      contains the content of the request as a javascript\n\t//                      object.\n\t//\n\t// The inputs and outputs maps can also be accessed via *this.inputs and\n\t// *this.outputs.\n\trequest:function(inputs,request) {\n\t    request.content = {\n\t        \"text\": inputs.text\n\t    };\n\t},\n\t\n\t// Add custom code to convert the response content to outputs\n\t//\n\t//*response.status    The status code of the response\n\t//*response.content   The content of the response as a javascript\n\t//                    object.\n\t//*response.request   The request object that resulted in the response.\n\t//\n\t// The inputs and outputs maps can also be accessed via *this.inputs and\n\t// *this.outputs.\n\tresponse:function(outputs,response) {\n\t    outputs.translated = response.content;\n\t    console.log(outputs.translated);\n\t}\n})\n",
-                            "backendEndpoint": "https://node-red-pentake.mybluemix.net",
+                            "backendEndpoint": "",
                             "resource": "/translate",
                             "method": "POST"
                         },
@@ -804,25 +804,6 @@
                         },
                         "ports": [],
                         "dynamicports": [],
-                        "children": []
-                    },
-                    {
-                        "id": "a30ce236-2692-fdc3-c2f8-b07c5ba0d8b5",
-                        "type": "Expression",
-                        "x": 1117.2653144926544,
-                        "y": 1091.394003932041,
-                        "parameters": {
-                            "expression": "count == 0"
-                        },
-                        "ports": [],
-                        "dynamicports": [
-                            {
-                                "name": "count",
-                                "type": "number",
-                                "plug": "input",
-                                "index": 2
-                            }
-                        ],
                         "children": []
                     },
                     {
