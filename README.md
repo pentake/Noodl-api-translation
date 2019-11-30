@@ -1,0 +1,2 @@
+# Noodl-api-translation
+英語のテキストを入力すると日本語に翻訳してくれるNoodlのプロジェクトデータです。IBM Watsonのlanguage translatorを利用しています。
